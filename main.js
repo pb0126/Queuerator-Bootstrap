@@ -13,3 +13,19 @@ function open_res_sidenav(){
     i=0;
     }	
 }
+function dropdown(){
+    if(i==0){
+        document.getElementById("nav-dropdown").style.display="block";
+        document.getElementById("dropdown-ico").style.display="none";
+        document.getElementById("fall-up-ico").style.display="inline-block";
+        document.getElementById("nav-list").style.marginRight="0.3em";
+        i=1;
+    }
+    else{
+        document.getElementById("nav-dropdown").style.display="none";
+        document.getElementById("dropdown-ico").style.display="inline-block";
+        document.getElementById("fall-up-ico").style.display="none";
+        document.getElementById("nav-list").style.marginRight="0";
+        i=0;
+    }
+}
