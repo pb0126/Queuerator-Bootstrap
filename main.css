@@ -7,7 +7,9 @@ body{
     font-family: 'Open Sans', sans-serif;
     -webkit-user-select: none;
 }
-/* Navbar */
+
+/* -----------------------------------------Navbar--------------------------------------------------- */
+
 .navbar{
     background-color: rgba(0,0,0,0.1);
     width: 100vw;
@@ -72,7 +74,9 @@ body{
     margin-top: 0.3em;
     padding: 0.3em;
 }
-/* media (max-width:500px)- sidebar*/
+
+/* --------------------------media (max-width:500px)- sidebar("Responsive")---------------------------------*/
+
 .nav-res-list-ico{
     color: rgb(255, 255, 255);
     float: right;
@@ -81,8 +85,8 @@ body{
     margin-right: 0.5em;
 }
 .nav-res-sidebar{
-    background-color: rgb(19, 19, 19);
-    width: 80vw;
+    background-color: rgb(17, 17, 17);
+    width: 70vw;
     height: 100vh;
     margin-top: 0.8em;
     float: right;
@@ -96,15 +100,40 @@ body{
     padding-right: 0.28em;
     margin-top: -1.5em;
 }
-.nav-res-list{
+.nav-res-u-list span{
+    padding-top: 3em;
+}
+.nav-res-list,.nav-res-list-active{
     list-style: none;
     font-size: 1.2em;
+    font-family: varela round,sans-serif;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1.2em;
+    border-bottom:0.02em solid rgb(0, 0, 0);
+}
+.nav-res-list-active{
+    background-color: #348ac7;
+}
+.nav-res-list:hover{
+    background-color:#5bb3f1;
+    color: #fff;
+    font-size: 1.3em;
 }
 .nav-res-list-a{
     text-decoration: none;
     color: white;
+    margin-top: 0.3em;
 }
-/* Home-page */
+.nav-res-list-a-active{
+    text-decoration: none;
+    background-color:#348ac7;
+    color: white;
+    margin-top: 0.3em;
+}
+
+/* ------------------------------------------------Home-page-------------------------------------------- */
+
 .home{
     background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/1.jpg");
     background-size: cover;
