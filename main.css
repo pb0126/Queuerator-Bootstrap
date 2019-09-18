@@ -6,8 +6,14 @@
 body{
     font-family: 'Open Sans', sans-serif;
     -webkit-user-select: none;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }
-
+h1{
+    font-family: montserrat,sans-serif;
+    font-weight: 650;
+}
 /* -----------------------------------------Navbar--------------------------------------------------- */
 
 .navbar{
@@ -19,7 +25,7 @@ body{
 .nav-logo{
     font-size: 2em;
     color: #fff;
-    font-weight:550;
+    font-weight:800;
 }
 .nav-u-list{
     margin: 0;
@@ -113,12 +119,12 @@ body{
     border-bottom:0.02em solid rgb(0, 0, 0);
 }
 .nav-res-list-active{
-    background-color: #348ac7;
+    background-color: #0782da;
 }
 .nav-res-list:hover{
-    background-color:#5bb3f1;
+    background-color:#0782da;
     color: #fff;
-    font-size: 1.3em;
+    text-align: center;
 }
 .nav-res-list-a{
     text-decoration: none;
@@ -127,16 +133,32 @@ body{
 }
 .nav-res-list-a-active{
     text-decoration: none;
-    background-color:#348ac7;
+    background-color:#0782da;
     color: white;
-    margin-top: 0.3em;
+    margin-left: 4em;
+}
+.nav-res-sidebar button{
+    background-color: #45a7ec;
+    color: #fff;
+    width: 2.8em;
+    height: 3em;
+    border: 0 transparent;
+    border-radius: 0.3em;
+    font-size:1.2em !important;
+    float: right;
+    margin-top: 1.5em;
+    margin-right: 0.9em;
+}
+.nav-res-sidebar button:hover{
+    background-color: #0782da;
+    color: #fff;
 }
 
 /* ------------------------------------------------Home-page-------------------------------------------- */
 
 .home{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/1.jpg");
-    background-size: cover;
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/1.jpg"); */
+    
     height: 100vh;
 }
 .home-mid{
@@ -191,9 +213,34 @@ button:focus, input:focus{
     display: table;
     margin: 4em auto;
 }
+.home-res-ico{
+    display: none !important;
+}
 
+/* -----------------------------------------------About-Page-------------------------------------*/
 
+.about{
+    /* background-image: linear-gradient(to right, #7474bf, #667ac3, #5680c6, #4685c7, #348ac7);
+    color:#fff; */
+    background-color: #fff;
+    color: #000;
+    height: 100vh;
+    /* margin-top: 3em; */
+}
+.about h1{
+    text-align: center;
+    font-size:3.5em !important;
+    padding-top: 3em;  
+}
 
+.about-line{
+    background-color: #348ac7;
+    width: 7.5em;
+    height:0.25em;
+    display: table;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
 
 
 
@@ -213,16 +260,19 @@ button:focus, input:focus{
     } */
     .nav-logo{
         padding-left: 0.4em;
-        font-weight:650;
+        font-weight:800 !important;
     }
     .nav-u-list{
         display:none !important;
     }
     .navbar{
         background-color: rgba(255, 255, 255);
+        border-bottom: solid rgba(0, 0, 0, 0.445) 0.05em;
     }
     .nav-logo{
         color: rgb(0, 0, 0);
+        font-weight: 100;
+
     }
     .nav-res-list-ico{
         color: rgb(0, 0, 0);
@@ -247,6 +297,22 @@ button:focus, input:focus{
     }
     .home-btn-2{
         display: none;
+    }
+    .home-res-ico{
+        display: block !important;
+        color: #fff;
+        text-align: center;
+        font-size: 2em !important;
+        padding-top: 1em;
+    }
+    .about h1{
+        font-size: 2.5em !important;
+        color: #000; 
+    }
+    .about-line{
+        width: 3.9em;
+        height: 0.29em;
+        margin-top: 1.2em; 
     }
 }
 @media (min-width:500px){

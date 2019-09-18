@@ -17,7 +17,7 @@
         <ul class="nav-u-list">
             <li class="nav-list"><a href="#" class="nav-list-a-active">Home</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
             <li class="nav-list"><a href="#" class="nav-list-a">About</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-            <li class="nav-list"><a href="#" class="nav-list-a">Services</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-list"><a href="#" class="nav-list-a">Features</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
             <li class="nav-list"><a href="#" class="nav-list-a">Price</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
             <li class="nav-list"><a href="#" class="nav-list-a">Team</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
             <li class="nav-list"id="nav-list" onclick="dropdown()"><a href="#" class="nav-list-a">Blog<span class="nav-dropdown-ico "><i class="fa fa-chevron-down" id="dropdown-ico"></i></span><span class="fall-up-ico"><i class="fa fa-chevron-right" id="fall-up-ico"></i></span></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -33,16 +33,18 @@
         <div class="nav-res-sidebar" id="nav-res-sidebar" >
             <ul class="nav-res-u-list"></ul>
                 <a href="#" class="nav-res-closebtn" id="nav-res-closebtn" onclick="open_res_sidenav()">&times;</a>
-                <li class="nav-res-list-active"><a href="#" class="nav-res-list-a-active"><span>Home</span></a></li>
-                <li class="nav-res-list"><a href="#" class="nav-res-list-a"><span>About</span></a></li>
-                <li class="nav-res-list"><a href="#" class="nav-res-list-a"><span>Services</span></a></li>
-                <li class="nav-res-list"><a href="#" class="nav-res-list-a"><span>Price</span></a></li>
-                <li class="nav-res-list"><a href="#" class="nav-res-list-a"><span>Team</span></a></li>
-                <li class="nav-res-list"><a href="#" class="nav-res-list-a"><span>Blog</span></a></li>
-                <li class="nav-res-list"><a href="#" class="nav-res-list-a"><span>Contact us</span></a></li>
+                <li class="nav-res-list-active"><a href="#" class="nav-res-list-a-active " id="nav-res-list-a" onclick="activeClass()"><span>Home</span></a></li>
+                <li class="nav-res-list"><a href="#" class="nav-res-list-a " id="nav-res-list-a" onclick="activeClass()"><span>About</span></a></li>
+                <li class="nav-res-list"><a href="#" class="nav-res-list-a " id="nav-res-list-a" onclick="activeClass()"><span>Features</span></a></li>
+                <li class="nav-res-list"><a href="#" class="nav-res-list-a " id="nav-res-list-a" onclick="activeClass()"><span>Price</span></a></li>
+                <li class="nav-res-list"><a href="#" class="nav-res-list-a " id="nav-res-list-a" onclick="activeClass()"><span>Team</span></a></li>
+                <li class="nav-res-list"><a href="#" class="nav-res-list-a " id="nav-res-list-a" onclick="activeClass()"><span>Blog</span></a></li>
+                <li class="nav-res-list"><a href="#" class="nav-res-list-a " id="nav-res-list-a" onclick="activeClass()"><span>Contact us</span></a></li>
             </ul>
+            <button type="button"><i class="fa fa-chevron-up"></i></button>
         </div>
     </nav>
+    <!-- Home page -->
     <div class="home">
         <div class="home-mid">
             <h1 class="home-heading">We are Queuerator.</h1>
@@ -53,7 +55,14 @@
         <div class="home-mid-btn">
             <button class="home-btn" type="button">Get Started</button>
             <button class="home-btn-2" type="button">Learn More</button>
+            <i class=" fa fa-angle-double-down home-res-ico" id="home-res-ico"></i>
         </div>
+        
+    </div>
+    <!-- About Page -->
+    <div class="about">
+        <h1>Why Is It Special</h1>
+        <div class="about-line"></div>
     </div>
         
 </body>

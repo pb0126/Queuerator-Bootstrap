@@ -29,3 +29,9 @@ function dropdown(){
         i=0;
     }
 }
+// function activeClass(){
+//   let a=1;
+//   if(a==1){
+//     document.getElementById("nav-res-list-a").addclass("")
+//   }
+// }
