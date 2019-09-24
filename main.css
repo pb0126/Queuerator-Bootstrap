@@ -17,7 +17,7 @@ h1{
 /* -----------------------------------------Navbar--------------------------------------------------- */
 
 .navbar{
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0);
     width: 100vw;
     height: 3.5em;
     position: fixed;
@@ -176,8 +176,8 @@ h1{
 }
 .home-para{
     color: #fff;
-    display: table;
-    margin: 2em 1em ;
+    /* display: table; */
+    margin: 2em 5em ;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -224,15 +224,14 @@ button:focus, input:focus{
     color:#fff; */
     background-color: #fff;
     color: #000;
-    height: 100vh;
+    /* height: 100vh; */
     /* margin-top: 3em; */
 }
 .about h1{
     text-align: center;
     font-size:3.5em !important;
-    padding-top: 3em;  
+    padding-top: 2.7em;  
 }
-
 .about-line{
     background-color: #348ac7;
     width: 7.5em;
@@ -241,9 +240,51 @@ button:focus, input:focus{
     margin: 0 auto;
     margin-top: 1.5em;
 }
-
-
-
+.about-card {
+    width: 90vw;
+    padding: 1em;
+    display: table;
+    margin: 6em auto 0 auto;
+    text-align: center;
+}
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
+    background-color: rgb(255, 255, 255);
+    width: 26vw;
+    height: 40vh;
+    display:inline-block;
+    border: rgb(211, 211, 211) solid 0.006em;
+}
+.card-2, .card-5{
+    margin: 0 2.6em 0 2.6em;
+}
+.card-4, .card-5, .card-6{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover, .card-6:hover{
+    background-color: rgba(41, 41, 41);
+    color: #ffffff;
+}
+/* .card-1-content{
+} */
+.card-1-ico, .card-2-ico, .card-3-ico, .card-4-ico, .card-5-ico, .card-6-ico{
+    font-size: 2.5em !important;
+    color: #348ac7 !important;
+    margin-top: 1em;
+}
+.about-card p{
+    margin-top: 0.3em;
+    font-size: 2em;
+    font-weight: 700;
+}
+.about-card-para{
+    color: rgb(136, 136, 136);
+    font-size: 0.5em !important;
+    word-break: break-all;
+    margin-top: 3em;
+    padding: 2em !important;
+    
+}
 
 
 
@@ -281,7 +322,7 @@ button:focus, input:focus{
         color: #000;
     }
     .home-heading{
-        font-size: 2.8em;
+        font-size: 2.6em;
     }
     .home-mid{
         padding-top: 15vh;
@@ -289,6 +330,9 @@ button:focus, input:focus{
     .home-para{
         margin-top: 1em;    
         background-color: rgba(0, 0, 0, 0.5); 
+        /* width: 90vw; */
+        display: table;
+        margin: 2em 1em 0.5em 1em;
         /* font-size: 1em;       */
     }
     .home-btn{
@@ -308,11 +352,22 @@ button:focus, input:focus{
     .about h1{
         font-size: 2.5em !important;
         color: #000; 
+        display:table;
+        margin: 0 1.2em auto;
     }
     .about-line{
         width: 3.9em;
         height: 0.29em;
         margin-top: 1.2em; 
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
+        width: 80vw;
+        height:15em;
+        display: table;
+        margin: 0 auto 2em auto;
+    }
+    .about-card-para{
+        margin-top: 1.9em;
     }
 }
 @media (min-width:500px){
@@ -329,5 +384,5 @@ button:focus, input:focus{
     .home-para{
         margin-left: 2em;
         margin-right: 2em;
-    }  
+    } 
 }

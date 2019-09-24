@@ -35,3 +35,15 @@ function dropdown(){
 //     document.getElementById("nav-res-list-a").addclass("")
 //   }
 // }
+// $(document).ready(function(){
+//   $(window).scroll(function(){
+//   	var scroll = $(window).scrollTop();
+// 	  if (scroll > 100) {
+// 	    $(".navbar").css("background" , "blue");
+// 	  }
+
+// 	  else{
+// 		  $(".navbar").css("background" , "#333");  	
+// 	  }
+//   })
+// })
