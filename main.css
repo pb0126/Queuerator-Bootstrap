@@ -14,6 +14,26 @@ h1{
     font-family: montserrat,sans-serif;
     font-weight: 650;
 }
+/* .line{
+    background-color: rgb(241, 240, 240);
+    height: 0.05em;    
+} */
+.line{
+    background-color: #348ac7;
+    width: 7.5em;
+    height:0.25em;
+    display: table;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+.line-side{
+    background-color: #348ac7;
+    width: 7.5em;
+    height:0.25em;
+    float: left;
+    margin-left: 1.7em;
+    margin-top: 1.5em;
+}
 /* -----------------------------------------Navbar--------------------------------------------------- */
 
 .navbar{
@@ -225,26 +245,19 @@ button:focus, input:focus{
     background-color: #fff;
     color: #000;
     /* height: 100vh; */
-    /* margin-top: 3em; */
+    margin-top: 3.5em;
 }
 .about h1{
     text-align: center;
     font-size:3.5em !important;
     padding-top: 2.7em;  
 }
-.about-line{
-    background-color: #348ac7;
-    width: 7.5em;
-    height:0.25em;
-    display: table;
-    margin: 0 auto;
-    margin-top: 1.5em;
-}
 .about-card {
     width: 90vw;
     padding: 1em;
     display: table;
-    margin: 6em auto 0 auto;
+    margin: 7em auto 0 auto;
+    padding-bottom: 5em;
     text-align: center;
 }
 .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
@@ -285,7 +298,41 @@ button:focus, input:focus{
     padding: 2em !important;
     
 }
+.about-mid{
+    background-image: -webkit-linear-gradient(135deg, rgb(143, 143, 143) 35%, rgb(243, 243, 243) 35%);
+    min-height: 45em;   
+}
+.about-mid img{
+    margin-top: 8em;
+    margin-right: 1.2em;
+    max-width: 90%;
+    float: right;
+}
+.about-mid h1{
+    text-align: left;
+    font-size:3.2em !important;
+    padding-top: 2.5em; 
+    padding-left: 0.5em;
+}
+.about-mid-para{
+    font-size: 1em !important;
+    word-break: break-all;
+    margin-top: 5em;
+    padding: 1.6em;
+}
 
+/* ---------------------------------------------------Services-------------------------------------------------*/
+
+.serv{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    height: 100vh;
+}
+.serv h1{
+    text-align: center;
+    font-size:3.5em !important;
+    padding-top: 2.5em;  
+}
 
 
 
@@ -299,6 +346,11 @@ button:focus, input:focus{
     /* .navbar{
         display: none;
     } */
+    .line{
+        width: 3.9em;
+        height: 0.29em;
+        margin-top: 1.2em; 
+    }
     .nav-logo{
         padding-left: 0.4em;
         font-weight:800 !important;
@@ -355,11 +407,6 @@ button:focus, input:focus{
         display:table;
         margin: 0 1.2em auto;
     }
-    .about-line{
-        width: 3.9em;
-        height: 0.29em;
-        margin-top: 1.2em; 
-    }
     .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
         width: 80vw;
         height:15em;
@@ -368,6 +415,35 @@ button:focus, input:focus{
     }
     .about-card-para{
         margin-top: 1.9em;
+    }
+    .about-mid{
+        background-image: -webkit-linear-gradient(90deg, rgb(143, 143, 143) 3%, rgb(243, 243, 243) 35%);
+        min-height: 50em;   
+    }
+    .about-mid img{
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
+    .about-mid h1{
+        font-size: 2em !important;
+        text-align: left;
+    }
+    .about-mid-para{
+        font-size: 0.6em;
+        margin-top: 2em;
+
+    }
+    .serv h1{
+        font-size: 2em !important;
+        color: #000; 
+        display:table;
+        margin: 0 auto;
+        font-weight: 650;
+    }
+    .line-side{
+        width: 5em;
+        margin-left:1.1em;
+        margin-top: 1em;
     }
 }
 @media (min-width:500px){
