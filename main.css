@@ -252,7 +252,7 @@ button:focus, input:focus{
     font-size:3.5em !important;
     padding-top: 2.7em;  
 }
-.about-card {
+.about-card, .serv-card{
     width: 90vw;
     padding: 1em;
     display: table;
@@ -260,7 +260,7 @@ button:focus, input:focus{
     padding-bottom: 5em;
     text-align: center;
 }
-.card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .serv-card-1, .serv-card-2, .serv-card-3, .serv-card-4, .serv-card-5, .serv-card-6{
     background-color: rgb(255, 255, 255);
     width: 26vw;
     height: 40vh;
@@ -274,7 +274,7 @@ button:focus, input:focus{
     margin-top: 3em;
     margin-bottom: 3em;
 }
-.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover, .card-6:hover{
+.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover, .card-6:hover, .serv-card-1:hover, .serv-card-2:hover, .serv-card-3:hover, .serv-card-4:hover, .serv-card-5:hover, .serv-card-6:hover{
     background-color: rgba(41, 41, 41);
     color: #ffffff;
 }
@@ -284,6 +284,7 @@ button:focus, input:focus{
     font-size: 2.5em !important;
     color: #348ac7 !important;
     margin-top: 1em;
+    font-weight: 550 !important;
 }
 .about-card p{
     margin-top: 0.3em;
@@ -323,15 +324,50 @@ button:focus, input:focus{
 
 /* ---------------------------------------------------Services-------------------------------------------------*/
 
-.serv{
+.serv-body{
     background-color: rgb(255, 255, 255);
     color: #000;
-    height: 100vh;
 }
-.serv h1{
+.serv-body h1{
     text-align: center;
     font-size:3.5em !important;
     padding-top: 2.5em;  
+}
+.serv-card{
+    margin-top: 5em;
+}
+.serv-card-1, .serv-card-2, .serv-card-3, .serv-card-4, .serv-card-5, .serv-card-6{
+    width: 28vw;
+    height:34vh;
+}
+.serv-card-2, .serv-card-5{
+    margin: 0 2.5em 0 2.5em;
+}
+.serv-card-4, .serv-card-5, .serv-card-6{
+    margin-top: 2.5em;
+}
+.serv-card i{
+    font-size: 2.3em !important;
+    font-weight: 900 !important;
+    color: #348ac7;
+    float: left;
+    margin: 1.5em 0 0 1em;
+}
+.serv-card h3{
+    margin:2.1em 0 0 0.6em;
+    float: left;
+    font-size: 1.7em;
+    font-weight: 780;
+    font-family: montserrat,sans-serif !important;
+}
+.serv-card p{
+    color: rgb(170, 169, 169);
+    font-size: 1em !important;
+    word-break: break-all;
+    margin: 6.5em 1em 0 5.5em;
+    padding: 1em !important;
+    text-align: left;
+    line-height: 1.8em;
 }
 
 
@@ -433,8 +469,8 @@ button:focus, input:focus{
         margin-top: 2em;
 
     }
-    .serv h1{
-        font-size: 2em !important;
+    .serv-body h1{
+        font-size: 2.5em !important;
         color: #000; 
         display:table;
         margin: 0 auto;
@@ -445,6 +481,20 @@ button:focus, input:focus{
         margin-left:1.1em;
         margin-top: 1em;
     }
+    .serv-card-1, .serv-card-2, .serv-card-3, .serv-card-4, .serv-card-5, .serv-card-6{
+        width: 90vw;
+        height:15em;
+        display: table;
+        margin: 0 auto 1.6em auto;  
+    }
+    .serv-card i{
+        font-size: 2.1em !important;
+        margin: 1.1em 0 0 0.5em;
+    }
+    .serv-card p{
+        margin: 5em 1em 0 4em;
+    }
+
 }
 @media (min-width:500px){
     .nav-logo{
