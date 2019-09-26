@@ -26,7 +26,7 @@ h1{
     margin: 0 auto;
     margin-top: 1.5em;
 }
-.line-side{
+.line-left{
     background-color: #348ac7;
     width: 7.5em;
     height:0.25em;
@@ -34,6 +34,15 @@ h1{
     margin-left: 1.7em;
     margin-top: 1.5em;
 }
+.line-right{
+    background-color: #348ac7;
+    width: 7.5em;
+    height:0.25em;
+    float: right;
+    margin-top: -20em;
+    margin-right: 28.5em;
+}
+
 /* -----------------------------------------Navbar--------------------------------------------------- */
 
 .navbar{
@@ -369,6 +378,28 @@ button:focus, input:focus{
     text-align: left;
     line-height: 1.8em;
 }
+.serv-mid{
+    background-image: -webkit-linear-gradient(320deg, rgb(143, 143, 143) 35%, rgb(243, 243, 243) 35%);
+    min-height: 45em;   
+}
+.serv-mid img{
+    margin-top: 8em;
+    margin-left: 7em;
+    max-width: 100%;
+}
+.serv-mid h1{
+    font-size:3.2em !important;
+    float: right;
+    margin: 3.5em 7.5em 0 0;
+}
+.serv-mid-para{
+    font-size: 1em;
+    word-break: break-all;
+    margin-top: -15em;
+    margin-left:46.5em;
+    padding: 1.6em;
+
+}
 
 
 
@@ -467,7 +498,6 @@ button:focus, input:focus{
     .about-mid-para{
         font-size: 0.6em;
         margin-top: 2em;
-
     }
     .serv-body h1{
         font-size: 2.5em !important;
@@ -493,6 +523,31 @@ button:focus, input:focus{
     }
     .serv-card p{
         margin: 5em 1em 0 4em;
+    }
+    .serv-mid{
+        background-image: -webkit-linear-gradient(90deg, rgb(143, 143, 143) 3%, rgb(243, 243, 243) 35%);
+        min-height: 50em;   
+    }
+    .serv-mid img{
+        display: table;
+        margin: 0 auto;
+        padding-top: 2.7em;
+        max-width: 75%;
+    }
+    .serv-mid h1{
+        font-size: 2em !important;
+        text-align: left;
+        margin: 2em 4.8em 0 0 !important;
+    }
+    .serv-mid-para{
+        margin: 8em 0 0 1.3em !important;
+    }
+    .line-right{
+        background-color: #348ac7;
+        width: 3em;
+        height:0.25em;
+        float: left;
+        margin:1em 0 0 3em;
     }
 
 }
