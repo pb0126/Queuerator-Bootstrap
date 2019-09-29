@@ -261,7 +261,7 @@ button:focus, input:focus{
     font-size:3.5em !important;
     padding-top: 2.7em;  
 }
-.about-card, .serv-card{
+.about-card{
     width: 90vw;
     padding: 1em;
     display: table;
@@ -269,12 +269,13 @@ button:focus, input:focus{
     padding-bottom: 5em;
     text-align: center;
 }
-.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .serv-card-1, .serv-card-2, .serv-card-3, .serv-card-4, .serv-card-5, .serv-card-6{
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .serv-card-1, .serv-card-2, .serv-card-3, .serv-card-4, .serv-card-5, .serv-card-6, .price-card-1, .price-card-2, .price-card-3{
     background-color: rgb(255, 255, 255);
     width: 26vw;
     height: 40vh;
     display:inline-block;
-    border: rgb(211, 211, 211) solid 0.006em;
+    border: rgb(211, 211, 211) solid 1px;
+    border-radius: 1%;
 }
 .card-2, .card-5{
     margin: 0 2.6em 0 2.6em;
@@ -284,7 +285,7 @@ button:focus, input:focus{
     margin-bottom: 3em;
 }
 .card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover, .card-6:hover, .serv-card-1:hover, .serv-card-2:hover, .serv-card-3:hover, .serv-card-4:hover, .serv-card-5:hover, .serv-card-6:hover{
-    background-color: rgba(41, 41, 41);
+    background-color: #333;
     color: #ffffff;
 }
 /* .card-1-content{
@@ -344,6 +345,12 @@ button:focus, input:focus{
 }
 .serv-card{
     margin-top: 5em;
+    width: 90vw;
+    padding: 1em;
+    display: table;
+    margin: 7em auto 0 auto;
+    padding-bottom: 5em;
+    text-align: center;
 }
 .serv-card-1, .serv-card-2, .serv-card-3, .serv-card-4, .serv-card-5, .serv-card-6{
     width: 28vw;
@@ -385,7 +392,7 @@ button:focus, input:focus{
 .serv-mid img{
     margin-top: 8em;
     margin-left: 7em;
-    max-width: 100%;
+    max-width: 90%;
 }
 .serv-mid h1{
     font-size:3.2em !important;
@@ -398,7 +405,84 @@ button:focus, input:focus{
     margin-top: -15em;
     margin-left:46.5em;
     padding: 1.6em;
+}
 
+/* -------------------------------------------------------Price---------------------------------------------- */
+
+.price-body{
+    background-color: #fff;
+    color: #000;
+}
+.price-body h1{
+    text-align: center;
+    font-size:3.5em !important;
+    padding-top: 2.5em; 
+}
+.price-card{
+    background-color:#fff;
+    display: table;
+    margin: 8em auto;
+}
+.price-card-1, .price-card-2, .price-card-3{
+    width: 22em;
+    height:28em;
+    margin-bottom: 10em;
+}
+.price-card-2{
+    margin: 0 2em 0 2em;
+}
+.price-card h3{
+    font-weight: 100 !important;
+    font-size: 1.1em !important;
+    color: rgb(160, 160, 160) !important;
+    text-align: center;
+    margin-top: 1.3em;
+}
+.price-card-1:hover, .price-card-2:hover, .price-card-3:hover{
+    background-color: #333;
+    color: #fff;
+}
+.price-card ul{
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    list-style: none;
+    color: rgb(160, 160, 160);
+    line-height: 1.5em;
+}
+.circle{
+    height: 8.8em;
+    width: 8.8em;
+    border-radius: 50%;
+    border: #6195ff solid 0.1em; 
+    text-align: center;
+    display: table;
+    margin: 1.8em auto;
+}
+.circle i{
+    font-size: 2.1em !important;
+    margin-top: 1.2em;
+}
+.circle span{
+    font-family: montserrat,sans-serif !important;
+    font-size: 0.9em;
+    margin-left: 0.1em;
+    margin-bottom: 0.1em;
+}
+.price-btn{
+    background-color:#fff;
+    color: #6195ff;
+    border: #6195ff solid 0.1em;
+    border-radius:0.26em;
+    padding: 1em 2.2em 1em 2.2em;
+    font-weight: 400 !important;
+    font-size: 1em;
+    display: table;
+    margin:2em auto;
+}
+.price-btn:hover{
+    background-color: #6195ff;
+    color: #fff;
 }
 
 
@@ -409,7 +493,7 @@ button:focus, input:focus{
 
 /* Responsive */
 
-@media (max-width:500px){
+@media (max-width:600px){
     /* .navbar{
         display: none;
     } */
@@ -499,7 +583,7 @@ button:focus, input:focus{
         font-size: 0.6em;
         margin-top: 2em;
     }
-    .serv-body h1{
+    .serv-body h1, .price-body h1{
         font-size: 2.5em !important;
         color: #000; 
         display:table;
@@ -511,11 +595,11 @@ button:focus, input:focus{
         margin-left:1.1em;
         margin-top: 1em;
     }
-    .serv-card-1, .serv-card-2, .serv-card-3, .serv-card-4, .serv-card-5, .serv-card-6{
+    .serv-card-1, .serv-card-2, .serv-card-3, .serv-card-4, .serv-card-5, .serv-card-6, .price-card-1, .price-card-2, .price-card-3{
         width: 90vw;
         height:15em;
         display: table;
-        margin: 0 auto 1.6em auto;  
+        margin: 0 auto 2em auto;  
     }
     .serv-card i{
         font-size: 2.1em !important;
@@ -549,9 +633,13 @@ button:focus, input:focus{
         float: left;
         margin:1em 0 0 3em;
     }
+    .price-card-1, .price-card-2, .price-card-3{
+        height: 28.5em;
+        margin-bottom: 6em;
+    }
 
 }
-@media (min-width:500px){
+@media (min-width:600px){
     .nav-logo{
         padding-left:1em;
         display: inline;
@@ -567,3 +655,4 @@ button:focus, input:focus{
         margin-right: 2em;
     } 
 }
+
