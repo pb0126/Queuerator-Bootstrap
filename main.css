@@ -256,7 +256,7 @@ button:focus, input:focus{
     /* height: 100vh; */
     margin-top: 3.5em;
 }
-.about h1{
+.about h1, .team h1{
     text-align: center;
     font-size:3.5em !important;
     padding-top: 2.7em;  
@@ -421,7 +421,8 @@ button:focus, input:focus{
 .price-card{
     background-color:#fff;
     display: table;
-    margin: 8em auto;
+    margin: 0 auto;
+    padding-top: 4em;
 }
 .price-card-1, .price-card-2, .price-card-3{
     width: 22em;
@@ -484,6 +485,40 @@ button:focus, input:focus{
     background-color: #6195ff;
     color: #fff;
 }
+.price-mid{
+    background-color: rgba(51, 51, 51, 0.596);
+}
+.price-mid ul{
+    /* display: inline-block; */
+    list-style: none;
+    text-align: center;
+}
+.price-mid li{
+    display: inline-block;
+    padding:0 7.2em 0 7.2em;
+    margin: 4.8em 0 4.8em 0;
+    color: #fff;
+    line-height: 3em;
+}
+.price-mid i{
+    font-size: 3em !important;
+    color: #6195ff !important;
+}
+.price-mid h1{
+    font-weight: 800 !important;
+}
+.price-mid p{
+    font-weight: 500 !important;
+}
+
+/* ---------------------------------------------------Team-Page -----------------------------------------------*/
+
+.team{
+    background-color: #fff;
+    height: 100vh;
+}
+
+
 
 
 
@@ -636,6 +671,12 @@ button:focus, input:focus{
     .price-card-1, .price-card-2, .price-card-3{
         height: 28.5em;
         margin-bottom: 6em;
+    }
+    .price-mid li{
+        padding:0 5em 0 5em;
+        margin: 1em 0 1em 0;
+        line-height: 3em;
+        
     }
 
 }
