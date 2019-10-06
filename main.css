@@ -357,7 +357,7 @@ button:focus, input:focus{
     height:34vh;
 }
 .serv-card-2, .serv-card-5{
-    margin: 0 2.5em 0 2.5em;
+    margin: 0 2.3em 0 2.3em;
 }
 .serv-card-4, .serv-card-5, .serv-card-6{
     margin-top: 2.5em;
@@ -412,6 +412,7 @@ button:focus, input:focus{
 .price-body{
     background-color: #fff;
     color: #000;
+    /* padding-bottom: 1em; */
 }
 .price-body h1{
     text-align: center;
@@ -527,7 +528,7 @@ button:focus, input:focus{
 }
 .team-card-1:hover, .team-card-2:hover, .team-card-3:hover{
     background-color: #333;
-    color: #6195ff !important;
+    color: #fff !important;
 }
 .team-card-2{
     margin: 0 4em 0 4em;
@@ -545,7 +546,7 @@ button:focus, input:focus{
 }
 .team h1{
     text-align: center;
-    font-size: 1.5em !important;
+    font-size: 3em !important;
     font-weight: 600 !important;
     color: #000;
     padding-top: 2em;
@@ -555,10 +556,62 @@ button:focus, input:focus{
     color: #868f9b;
     margin-top: 0.4em;
 }
+.team h3{
+    text-align: center !important;
+    font-size: 2em;
+    margin-top: 0.5em;
+    color: #000;
+
+}
 .team-mid{
     background-color: rgba(51, 51, 51, 0.473);
     height: 100vh;
 }
+
+/* -------------------------------------------------Contact Us------------------------------------------------- */
+.cont{
+    background-color: rgb(231, 231, 231);
+    color: #fff; 
+}
+.cont h1{
+    text-align: center;
+    font-size: 2.5em !important;
+    font-weight: 600 !important;
+    color: #000;
+    padding-top: 1.8em;
+}
+.cont ul{
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.cont li{
+    display: inline-block;
+    padding:0 9em 0 9em;
+    margin: 6em 0 4.8em 0;
+}
+.cont-list{
+    display: table;
+    margin: 0 auto;
+}
+.cont i{
+    font-size: 2.7em !important;
+    color: #6195ff !important;
+}
+.cont h3{
+    text-align: center;
+    font-weight: 750 !important;
+    color: #000;
+    padding-top: 0.8em;
+}
+.cont p{
+    font-size: 1.2em;
+    color: #868f9b;
+    padding-top: 0.5em;
+}
+
+
+
 
 
 
@@ -658,7 +711,7 @@ button:focus, input:focus{
         font-size: 0.6em;
         margin-top: 2em;
     }
-    .serv-body h1, .price-body h1{
+    .serv-body h1, .price-body h1, .team h1, .cont h1{
         font-size: 2.5em !important;
         color: #000; 
         display:table;
@@ -722,13 +775,22 @@ button:focus, input:focus{
         height: 15em;
         margin-bottom:0;
     }
+    .price-mid{
+        padding-bottom: 4em;
+    }
     .team-card-1, .team-card-2, .team-card-3{
         height: 25em;
     }
     .team h1{
         margin-top: -1.2em;
     }
-    
+    .team{
+        padding-bottom: 4em;
+    }
+    .cont li{
+        padding:0;
+        margin: 4em 0 2.5em 0;
+    }
 
 }
 @media (min-width:600px){
