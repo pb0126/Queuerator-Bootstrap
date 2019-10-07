@@ -515,7 +515,7 @@ button:focus, input:focus{
 /* ---------------------------------------------------Team-Page -----------------------------------------------*/
 
 .team{
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     color: #000;
 }
 .team-card-1, .team-card-2, .team-card-3{
@@ -570,7 +570,7 @@ button:focus, input:focus{
 
 /* -------------------------------------------------Contact Us------------------------------------------------- */
 .cont{
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(250, 250, 250);
     color: #fff; 
 }
 .cont h1{
@@ -609,9 +609,46 @@ button:focus, input:focus{
     color: #868f9b;
     padding-top: 0.5em;
 }
-
-
-
+.cont-form{
+    display: table;
+    margin: 0 auto;
+    padding-bottom:4em;
+}
+.col-50, .col-100, .txt-100{
+    width: 30em;
+    height: 3.2em;
+    display: inline-block;
+    padding-left: 1em;
+    margin:0 1em 0 1em;
+    border: none;
+    border-radius: 0.2em;
+    background-color: rgb(231, 231, 231);
+}
+.col-100, .txt-100{
+    margin:1em 1em 1em 1em;
+    width: 63.4em;
+}
+.txt-100{
+    padding:0.5em 0 0 1em;
+    height: 6em;
+}
+.cont-btn{
+    display: table;
+    margin: 1em auto;
+    border: solid #6195ff 0.1em;
+    border-radius: 0.3em;
+    width: 12vw;
+    height: 7vh;
+    background-color: #0782da;
+    color: #fff;
+    font-size: 0.8em;
+}
+.cont-btn:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+input[type=text]:focus {
+    border: 0.1em solid #0782da ;
+}
 
 
 
@@ -791,6 +828,17 @@ button:focus, input:focus{
         padding:0;
         margin: 4em 0 2.5em 0;
     }
+    .col-50, .col-100, .txt-100{
+        display: table;
+        margin:0 auto;
+        width: 70vw;
+        margin-bottom: 1em;
+    }
+    .cont-btn{
+        width:10em;
+        margin-top: 2.5em;
+    }
+
 
 }
 @media (min-width:600px){
