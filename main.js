@@ -1,4 +1,4 @@
-var i=0;
+var i=0; 
 function open_res_sidenav(){
   if(i==0){
     document.getElementById("nav-res-sidebar").style.display="block";
